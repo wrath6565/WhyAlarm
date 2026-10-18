@@ -5,5 +5,5 @@ import android.content.Context
 import android.content.Intent
 
 class BootReceiver : BroadcastReceiver() {
-    override fun onReceive(c: Context, i: Intent) { Scheduler.scheduleFromPrefs(c) }
+    override fun onReceive(c: Context, i: Intent) { Scheduler.scheduleAll(c) }
 }
